@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6139544}
   - component: {fileID: 11495720}
   - component: {fileID: 11494756}
-  - component: {fileID: 11471728}
+  - component: {fileID: 7661459865127759839}
   m_Layer: 0
   m_Name: bullet
   m_TagString: Player
@@ -107,7 +107,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -192,7 +192,7 @@ MonoBehaviour:
   tagListType: 1
   tags:
   - Player
---- !u!114 &11471728
+--- !u!114 &7661459865127759839
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -403,7 +403,7 @@ Transform:
   m_GameObject: {fileID: 957069251}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.84}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -421,9 +421,11 @@ GameObject:
   - component: {fileID: 1191513931}
   - component: {fileID: 1191513930}
   - component: {fileID: 1191513934}
-  - component: {fileID: 1191513929}
   - component: {fileID: 1191513933}
   - component: {fileID: 1191513935}
+  - component: {fileID: 1191513936}
+  - component: {fileID: 1191513937}
+  - component: {fileID: 1191513938}
   m_Layer: 0
   m_Name: Spaceship
   m_TagString: Player
@@ -431,19 +433,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1191513929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1191513928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a263c48b7905b634caa0ff5c64fc7255, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  f_horPlayAccel: 5000
 --- !u!50 &1191513930
 Rigidbody2D:
   serializedVersion: 5
@@ -456,8 +445,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 10
-  m_LinearDamping: 1.5
+  m_Mass: 1
+  m_LinearDamping: 5.06
   m_AngularDamping: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -608,7 +597,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1191513928}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 92e91f427d87f0844b7c122d1aef1ad0, type: 3}
   m_Name: 
@@ -616,6 +605,45 @@ MonoBehaviour:
   tagListType: 0
   tags:
   - Enemy
+--- !u!114 &1191513936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191513928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c602709e8700d4e9f472c4938d297e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1191513937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191513928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60933478be7a8014a97c1bfdd10aabf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  acceleration: 700
+--- !u!114 &1191513938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191513928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8009ce5aa082db54aa1107fd251f4b9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: {x: 0, y: 0}
+  movement: {fileID: 1191513937}
 --- !u!1 &1383833419
 GameObject:
   m_ObjectHideFlags: 0
