@@ -2,6 +2,11 @@
 using System.Collections;
 using System.Collections.Generic;
 
+
+/// <summary>
+/// Destroys the GameObject when it collides with another object based on its tag type
+/// </summary>
+
 public enum TagListType
 {
     Blacklist,
@@ -34,10 +39,6 @@ public class DestroyedOnCollision : MonoBehaviour
         {
             // Destroy if it's a Whitelist and the tag is NOT in the Whitelist
             Destroy(gameObject);
-        }
-        else
-        {
-            // Use default collision code
         }
     }
 }

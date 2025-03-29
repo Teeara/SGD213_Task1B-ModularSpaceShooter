@@ -1,5 +1,9 @@
 using UnityEngine;
 
+/// <summary>
+/// applies constant movement to a GameObject in a specified direction
+/// </summary>
+
 public class ConstantSpeed : MonoBehaviour
 {
 

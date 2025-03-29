@@ -1,5 +1,11 @@
+
+
 using System;
 using UnityEngine;
+
+/// <summary>
+/// Manages player inputs for movement and shooting
+/// </summary>
 
 public class InputManager : MonoBehaviour
 {
@@ -8,7 +14,7 @@ public class InputManager : MonoBehaviour
     private Movement movement;
     private ShootingScript shooting;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
     void Start()
     {
         movement = GetComponent<Movement>();
@@ -18,10 +24,12 @@ public class InputManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float input = Input.GetAxis("Horizontal"); //-1 left 1 right attach to player
+        //check input from player 
+        float input = Input.GetAxis("Horizontal"); 
 
         movement.Move(Vector2.right * input);
 
+        //check if player is pressing "Fire1" button, if so shoot bullet
         if (Input.GetButton("Fire1"))
         {
             shooting.Shoot();

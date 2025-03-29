@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Moves the bullet forward by applying initial velocity and continuous acceleration
+/// </summary>
+
 public class BulletMoveForward : MonoBehaviour 
 {
 

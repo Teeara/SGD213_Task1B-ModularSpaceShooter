@@ -1,4 +1,12 @@
-﻿using UnityEngine;
+﻿
+/// <summary>
+/// SampleMethod is a sample of how to use abstraction by
+/// specification. It converts a provided integer to a float.
+/// </summary>
+/// <param name="number">any integer</param>
+/// <returns>the number parameter as a float</returns>
+
+using UnityEngine;
 using System.Collections;
 
 public class ShootingScript : MonoBehaviour
@@ -16,7 +24,7 @@ public class ShootingScript : MonoBehaviour
 
     void Start()
     {
-        // Do some math to perfectly spawn bullets in front of us
+        //Maths to spawn the bullet directly infront of the player
         bulletOffset = GetComponent<Renderer>().bounds.size.y / 2 // Half of our size
         + bullet.GetComponent<Renderer>().bounds.size.y / 2; // Plus half of the bullet size
     }
@@ -28,7 +36,7 @@ public class ShootingScript : MonoBehaviour
         {
             float CurrentTime = Time.time;
 
-            // Have a delay so we don't shoot too many bullets
+            // Shooting delay between bullets
             if (CurrentTime - lastFiredTime > fireDelay)
             {
                 Vector2 spawnPosition = new Vector2(transform.position.x, transform.position.y + bulletOffset);
@@ -38,17 +46,12 @@ public class ShootingScript : MonoBehaviour
                 lastFiredTime = CurrentTime;
             }
 
-            //print("Shoot!");
+           
         }
     }
 
-    /// <summary>
-    /// SampleMethod is a sample of how to use abstraction by
-    /// specification. It converts a provided integer to a float.
-    /// </summary>
-    /// <param name="number">any integer</param>
-    /// <returns>the number parameter as a float</returns>
-    public float SampleMethod(int number) {
+    public float SampleMethod(int number) 
+    {
         return number;
     }
 

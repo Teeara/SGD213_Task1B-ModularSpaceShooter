@@ -13,10 +13,9 @@ GameObject:
   - component: {fileID: 6143684}
   - component: {fileID: 5092182}
   - component: {fileID: 11423432}
-  - component: {fileID: 11467320}
   - component: {fileID: 11449988}
   - component: {fileID: 11475496}
-  - component: {fileID: 11432354}
+  - component: {fileID: 8827487949046104760}
   m_Layer: 0
   m_Name: enemy
   m_TagString: Enemy
@@ -180,18 +179,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maximumSpinSpeed: 200
---- !u!114 &11467320
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153648}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e33a13abbfd718642be341cd1d6da2ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11449988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,7 +206,7 @@ MonoBehaviour:
   tagListType: 0
   tags:
   - Player
---- !u!114 &11432354
+--- !u!114 &8827487949046104760
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -228,7 +215,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 153648}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 580aaf2a268c0f04d993f7ed8f4f0288, type: 3}
+  m_Script: {fileID: 11500000, guid: 8009ce5aa082db54aa1107fd251f4b9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  acceleration: 75
+  direction: {x: 0, y: 0}
+  movement: {fileID: 0}

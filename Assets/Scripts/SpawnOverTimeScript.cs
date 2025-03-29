@@ -1,4 +1,10 @@
-﻿using UnityEngine;
+﻿
+/// <summary>
+/// Controls Spawning of object (enemy), being spawning the object, delaying time between spawns, 
+/// and randomising its spawn location within the spawner
+/// </summary>
+
+using UnityEngine;
 using System.Collections;
 
 public class SpawnOverTimeScript : MonoBehaviour
@@ -20,7 +26,7 @@ public class SpawnOverTimeScript : MonoBehaviour
 
         ourRenderer = GetComponent<Renderer>();
 
-        // Stop our Spawner from being visible!
+        // Spawner is invisable
         ourRenderer.enabled = false;
 
         // Call the given function after spawnDelay seconds, 
