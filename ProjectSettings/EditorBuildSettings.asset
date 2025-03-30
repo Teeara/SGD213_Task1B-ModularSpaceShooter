@@ -4,6 +4,12 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Spaceship.unity
+    guid: 5c56f18a8efb6ed4ebf96d55d38270b3
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 6cf88248f56c4824e89f87da9a3cad94
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
