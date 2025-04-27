@@ -202,7 +202,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -301,4 +301,3 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 1127182586527932786}
   player: {fileID: 8587721546249738964}
   objectPool: {fileID: 6216433324090329420}
-  direction: {x: 0, y: -1}

@@ -190,7 +190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92e91f427d87f0844b7c122d1aef1ad0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tagListType: 1
+  tagListType: 0
   tags:
   - Player
   - Pickup

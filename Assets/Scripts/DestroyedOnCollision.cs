@@ -48,7 +48,7 @@ public class DestroyedOnCollision : MonoBehaviour
             }
         }
 
-        
+
 
         else if (tagListType == TagListType.Whitelist
             && !tagInList)

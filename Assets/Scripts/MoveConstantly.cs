@@ -31,7 +31,7 @@ public class MoveConstantly : MonoBehaviour
             if (value.magnitude == 1) {
                 direction = value;
             } else {
-                direction = value/*.normalized*/;
+                direction = value.normalized;
             }
         }
     }

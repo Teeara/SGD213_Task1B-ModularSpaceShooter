@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class AIMoveAndShoot : MonoBehaviour {
 
+
+    /// <summary>
+    /// AIMoveAndShoot controls an enemy's movement in a random downward direction
+    /// and handles automatic shooting using its equipped weapon.
+    /// </summary>
+    
+
     // state
     private Vector2 movementDirection;
 

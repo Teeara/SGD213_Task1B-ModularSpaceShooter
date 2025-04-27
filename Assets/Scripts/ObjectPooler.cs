@@ -2,6 +2,11 @@ using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// ObjectPooler manages a pool of GameObjects to reuse instead of constantly instantiating and destroying them,
+/// improving performance especially for bullets, enemies, etc.
+/// </summary>
+
 
 public class ObjectPooler : MonoBehaviour
 {
