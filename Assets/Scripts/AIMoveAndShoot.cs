@@ -35,6 +35,7 @@ public class AIMoveAndShoot : MonoBehaviour {
         // shoot if we have a IWeapon component attached
         if (weapon != null) 
         {
+            Debug.Log("Enemy shoot!");
             weapon.Shoot();
         }
     }

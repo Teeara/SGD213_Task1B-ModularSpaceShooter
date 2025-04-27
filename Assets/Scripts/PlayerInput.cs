@@ -84,5 +84,15 @@ public class PlayerInput : MonoBehaviour
         Destroy(weapon);
         // set our current weapon to be the newWeapon
         weapon = newWeapon;
-    }
+
+    //    if (weaponType == WeaponType.tripleShot)
+    //    {
+    //        StartCoroutine(RevertToDefaultWeaponAfterDelay(5f)); // 5 seconds, change as needed
+    //    }
+        }
+    //private IEnumerator RevertToDefaultWeaponAfterDelay(float delay)
+    //{
+    //    yield return new WaitForSeconds(delay);
+    //    SwapWeapon(WeaponType.machineGun); 
+    //} i was trying to set a timer to revert from the powerup back to normal weapon
 }
